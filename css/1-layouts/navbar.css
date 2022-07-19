@@ -59,8 +59,10 @@
     display: none !important;
   }
   .navbar__list {
+    position: static;
     height: auto;
     flex-direction: row;
+    background-color: transparent;
   }
   .navbar__list > a,
   .navbar__list > a:link,

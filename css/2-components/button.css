@@ -1,0 +1,13 @@
+.btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1.8rem 4.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 99px;
+  color: var(--white-color);
+  background: var(--btn-gradient);
+}
+.btn:hover {
+  background: var(--btn-gradient-hover);
+}
