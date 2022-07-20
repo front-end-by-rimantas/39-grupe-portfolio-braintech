@@ -1,5 +1,5 @@
 @import url('./0-base/breakpoints.css');
-@import url('./0-base/layout.css');
+@import url('./0-base/animations.css');
 @import url('./0-base/base.css');
 
 @import url('./1-layouts/navbar.css');

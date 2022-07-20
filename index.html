@@ -36,7 +36,7 @@
 
   <body>
     <!-- HEADER + NAV --START==================== -->
-    <header class="container header-background">
+    <header id="home" class="container header-background">
       <div class="row">
         <header>
           <nav class="navbar">
@@ -54,14 +54,31 @@
           </nav>
 
           <div class="heading">
-            <button class="heading__youtube">PLAY</button>
-            <h1>We Are Digital Agency & Technology Solution</h1>
-            <p>
-              We are leading technology solutions providing company all over the world
-              doing over 40 years.
-            </p>
-            <button>Get Started</button>
+            <!-- LEFT-SIDE -->
+            <div class="heading__intro">
+              <button class="fa-solid fa-play heading__youtube"></button>
+              <div class="heading__intro-text">
+                <h1>We Are Digital Agency & Technology Solution</h1>
+                <p>
+                  We are leading technology solutions providing company all over the world
+                  doing over 40 years.
+                </p>
+              </div>
+
+              <a href="#" class="btn">Get Started</a>
+            </div>
+            <!-- RIGHT-SIDE -->
+
+            <img
+              src="./assets/images/header-rocket.png"
+              alt="rocket"
+              class="heading__image"
+            />
           </div>
+
+          <div class="animated-line animated-line-1"></div>
+          <div class="animated-line animated-line-2"></div>
+          <div class="animated-line animated-line-3"></div>
         </header>
       </div>
     </header>
@@ -74,7 +91,7 @@
     <!-- COMPOSITION-TOP --END====================== -->
 
     <!-- ABOUT-US --START==================== -->
-    <section class="container about-background">
+    <section id="about" class="container about-background">
       <div class="row"></div>
     </section>
     <!-- ABOUT-US --END====================== -->
@@ -86,13 +103,13 @@
     <!-- ABOUT-US-PROGRESS --END====================== -->
 
     <!-- SERVICES --START==================== -->
-    <section class="container services-background">
+    <section id="services" class="container services-background">
       <div class="row"></div>
     </section>
     <!-- SERVICES --END====================== -->
 
     <!-- CHOOSE-US --START==================== -->
-    <section class="container choose-us-background">
+    <section id="pages" class="container choose-us-background">
       <div class="row"></div>
     </section>
     <!-- CHOOSE-US --END====================== -->
@@ -104,7 +121,7 @@
     <!-- LETS TALK --END====================== -->
 
     <!-- BLOGS --START==================== -->
-    <section class="container blogs-background">
+    <section id="blog" class="container blogs-background">
       <div class="row"></div>
     </section>
     <!-- BLOGS --END====================== -->
@@ -122,7 +139,7 @@
     <!-- COMPOSITION-BOTTOM --END====================== -->
 
     <!-- FOOTER --START==================== -->
-    <footer class="container footer-background">
+    <footer id="contact" class="container footer-background">
       <div class="row"></div>
     </footer>
     <!-- FOOTER --END====================== -->
