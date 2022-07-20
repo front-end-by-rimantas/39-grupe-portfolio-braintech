@@ -19,3 +19,12 @@
     border-radius: 50%;
   }
 }
+
+@keyframes header-slides {
+  0% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
