@@ -1,0 +1,9 @@
+.container .row {
+    display: flex;
+    /* flex-direction: column; */
+/* background-color: aqua; */
+}
+
+.container .row .fourth {
+    width: 25%
+}
