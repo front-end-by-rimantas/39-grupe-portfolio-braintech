@@ -1,7 +1,7 @@
 {
   "name": "39-grupe-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)\r ![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)\r ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)\r ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)\r [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)",
   "main": "index.js",
   "scripts": {
     "dev": "dead-server --port=3010 --host=localhost",
@@ -12,5 +12,13 @@
   "license": "MIT",
   "devDependencies": {
     "dead-server": "^1.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-by-rimantas/39-grupe-portfolio-braintech.git"
+  },
+  "bugs": {
+    "url": "https://github.com/front-end-by-rimantas/39-grupe-portfolio-braintech/issues"
+  },
+  "homepage": "https://github.com/front-end-by-rimantas/39-grupe-portfolio-braintech#readme"
 }
