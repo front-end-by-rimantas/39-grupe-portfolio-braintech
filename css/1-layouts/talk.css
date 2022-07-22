@@ -1,0 +1,85 @@
+/* Item left */
+
+.talk-background h2{
+    text-transform: uppercase;
+}
+
+.talk-background h1{
+    text-transform: capitalize;
+}
+
+.talk-background .item-left h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 80px;
+    position: relative;
+    color: #03228F;
+}
+
+.talk-background .item-left > h1{
+    font-size: 40px;
+}
+
+.talk-background .item-left h2::before{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    left: -70px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.talk-background .item-left p{
+    width: 60%;
+}
+
+.talk-background .item-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.talk-background .icons .icon-info{
+   display: inline-block;
+   width: 90%;
+}
+
+.talk-background img{   
+    width: 55px;
+}
+
+/* Item right */
+
+.talk-background .item-right{  
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    /*Background color is same as section color. 
+    The section bg color is white for that reason 
+    section color needs to be changed*/
+    /*Temp changed color to be visible agains section*/
+    background-color: rgb(220, 213, 213);
+}
+
+.talk-background .talk-form-cl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.talk-background .talk-form-cl input[type="text"],
+                               input[type="email"],
+                               input[type="button"]{
+    padding: 20px 10px;
+    background-color: #f6f7f9;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.talk-background .talk-form-cl input[type="button"]{
+    color: white;
+    background-image: linear-gradient(#03228f, #0b70e1);
+}
