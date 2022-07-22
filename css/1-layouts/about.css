@@ -44,6 +44,70 @@
   color: rgb(16, 16, 16);
   line-height: 21,6;
 }
+.hiQuality {
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.hiQuality:hover {
+  background-color: #fd7e14;
+}
+.hiQuality:hover .figure {
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/1.png");
+}
+/* .figure  {
+position: relative;
+height: 60px;
+width: 60px;
+margin: 50px 0 0 30px;
+}
+.figure {
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+object-fit: contain;
+opacity: 0;
+transition: opacity .2s;
+} */
+
+
+.figure {
+  /* position: relative; */
+  width: 60px;
+  height: 60px;
+  margin: 50px 0 0 30px;
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/1.png");
+background-size: contain;
+
+}
+
+.figure:hover {
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/1.png");
+}
+
+
+.textInBoxMain {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(16, 16, 16);
+  line-height: 28,8;
+  padding-left: 30px;
+  padding-top: 38px;
+}
+.textInBox {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(16, 16, 16);
+  line-height: 28,8;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
 /* MEDIA QUERY MANAGER */
 
 /* from 480px === min-width: 30em */
@@ -104,7 +168,7 @@
   }
   .hiQuality {
       grid-area: hiQuality;
-      background-color: rgb(5, 20, 158);
+      
   }
   .fullStack {
       grid-area: fullStack;
