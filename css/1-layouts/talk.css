@@ -6,18 +6,20 @@
 
 .talk-background h1{
     text-transform: capitalize;
+    line-height: 60px;
 }
 
 .talk-background .item-left h2{
     font-size: 15px;
     font-weight: 400;
-    margin-left: 80px;
+    margin-left: 95px;
     position: relative;
     color: #03228F;
 }
 
 .talk-background .item-left > h1{
     font-size: 40px;
+    line-height: 80px;
 }
 
 .talk-background .item-left h2::before{
@@ -31,8 +33,20 @@
     transform: translateY(100%);
 }
 
+.talk-background .item-left h2::after{
+    content: '';
+    width: 15px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    left: -95px;
+    top:5px;
+    transform: translateY(100%);
+}
+
 .talk-background .item-left p{
     width: 60%;
+    margin-bottom: 20px;
 }
 
 .talk-background .item-left{
@@ -43,10 +57,13 @@
 .talk-background .icons .icon-info{
    display: inline-block;
    width: 90%;
+   vertical-align: middle;
+   margin-left: 15px;
 }
 
 .talk-background img{   
     width: 55px;
+    vertical-align: middle;
 }
 
 /* Item right */
@@ -59,7 +76,7 @@
     The section bg color is white for that reason 
     section color needs to be changed*/
     /*Temp changed color to be visible agains section*/
-    background-color: rgb(220, 213, 213);
+    background-color: white;
 }
 
 .talk-background .talk-form-cl{
