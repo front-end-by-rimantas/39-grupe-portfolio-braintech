@@ -1,0 +1,156 @@
+.about-background {
+    background-color: cadetblue;
+}
+
+.aboutUs {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(3, 34, 143);
+  line-height: 28px;
+  transform: uppercase;
+  letter-spacing: 1px;
+}
+.mainText {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(16, 16, 16);
+  line-height: 36.4px;
+}
+.textAbout {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(16, 16, 16);
+
+}
+.hapyyClients {
+  font-weight: 700;
+  font-size: 45px;
+  color: rgb(221,76,35)
+}
+.happyText {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(16, 16, 16);
+  line-height: 21,6;
+}
+.projectDelivered {
+  font-weight: 700;
+  font-size: 45px;
+  color: rgb(3,34,143)
+}
+.projectText {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(16, 16, 16);
+  line-height: 21,6;
+}
+/* MEDIA QUERY MANAGER */
+
+/* from 480px === min-width: 30em */
+/* from 580px === min-width: 36.25em */
+/* from 768px === min-width: 48em */
+/* from 1000px === min-width: 62.5em */
+/* from 1200px === min-width: 75em */
+/* from 1300px === min-width: 81.25em */
+
+.container {
+    width: 100%;
+    display: inline-block;
+    padding: 0 1.5rem;
+  }
+  
+  .container > .row {
+    width: 100%;
+    display: inline-block;
+  }
+  
+  /* from 580 px */
+  @media screen and (min-width: 36.25em) {
+    .container {
+      padding: 0;
+    }
+    .container > .row {
+      width: 51rem;
+      margin: 0 calc(50% - 25.5rem);
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1,3fr 0,5fr 0,5fr 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: 1fr 1.3fr 0.7fr;
+      grid-template-rows: 0.5fr 1.5fr 1.7fr 1.5fr 0.4fr 0.4fr;
+      grid-auto-flow: row; */
+      gap: 5px;
+      grid-template-areas:
+      "over25 over25"
+      "hapyyClients projectDelivered"
+      
+      "hiQuality hiQuality"
+      "fullStack fullStack"
+      "agile agile"
+      "codeQuality codeQuality";
+  }
+    }
+    .over25 {
+      grid-area: over25;
+      background-color: rgb(68, 101, 209);
+  }
+  .hapyyClients {
+      grid-area: hapyyClients;
+      background-color: rgb(102, 57, 145);
+  }
+  .projectDelivered {
+      grid-area: projectDelivered;
+      background-color: rgb(142, 143, 223);
+  }
+  .hiQuality {
+      grid-area: hiQuality;
+      background-color: rgb(5, 20, 158);
+  }
+  .fullStack {
+      grid-area: fullStack;
+      background-color: rgb(69, 75, 158);
+  }
+  .agile {
+      grid-area: agile;
+      background-color: rgb(82, 29, 180);
+  }
+  .codeQuality {
+      grid-area: codeQuality;
+      background-color: blue;
+  }
+  nav {
+      display:none
+  }
+  
+  /* from 768 px */
+  @media screen and (min-width: 48em) {
+    .container > .row {
+      width: 69rem;
+      margin: 0 calc(50% - 34.5rem);
+    }
+  }
+  
+  /* from 1000px px */
+  @media screen and (min-width: 62.5em) {
+    .container > .row {
+      width: 93rem;
+      margin: 0 calc(50% - 46.5rem);
+    }
+  }
+  
+  /* from 1200px px */
+  @media screen and (min-width: 75em) {
+    .container > .row {
+      width: 111rem;
+      margin: 0 calc(50% - 55.5rem);
+    }
+  }
+  
+  /* from 1300px */
+  @media screen and (min-width: 81.25em) {
+    .container > .row {
+      width: 121rem;
+      margin: 0 calc(50% - 60.5rem);
+    }
+  }
+  
