@@ -1,3 +1,6 @@
+import { ProgressBar } from "../components/Progress-bar.js";
+import { progressAboutData } from "../data/progressData.js";
+
 console.log('home page...');
 
 /* header start */
@@ -10,20 +13,19 @@ console.log('home page...');
 /* about me end */
 
 /*progress start*/
-    import { Progress } from "../components/progress-bar-render.js";
-    import { progressAboutData } from "../data/progressData.js";
-    const prog = new Progress(progressAboutData);
-    prog.renderProgressBars();
-    
+    const prog = new ProgressBar(progressAboutData, '#progress-section-para', '.progress-value');
+
     let playOnce = true;
-    function Play(){
+    function PlayProgressFill(){
         if(window.scrollY >= 1250 && playOnce)
         {
-            prog.fillProgressBars();
+            prog.fillProgressBar();
             playOnce = false;
         }
     }
-    window.addEventListener('scroll', Play);
+    
+    window.addEventListener('pageshow', PlayProgressFill);
+    window.addEventListener('scroll', PlayProgressFill);
 /*progress end*/
 
 /* services start */
