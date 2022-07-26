@@ -18,7 +18,7 @@
 }
 
 .talk-background .item-left > h1{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 80px;
 }
 
@@ -45,18 +45,20 @@
 }
 
 .talk-background .item-left p{
-    width: 60%;
     margin-bottom: 20px;
 }
 
 .talk-background .item-left{
     display: flex;
     flex-direction: column;
+    width: 70%;
 }
 
+.talk-background .icons .icon-self{
+    display: flex;
+ }
+
 .talk-background .icons .icon-info{
-   display: inline-block;
-   width: 90%;
    vertical-align: middle;
    margin-left: 15px;
 }
@@ -64,6 +66,7 @@
 .talk-background img{   
     width: 55px;
     vertical-align: middle;
+    object-fit: contain;
 }
 
 /* Item right */
@@ -77,6 +80,7 @@
     section color needs to be changed*/
     /*Temp changed color to be visible agains section*/
     background-color: white;
+    width: 30%;
 }
 
 .talk-background .talk-form-cl{
@@ -99,4 +103,19 @@
 .talk-background .talk-form-cl input[type="button"]{
     color: white;
     background-image: linear-gradient(#03228f, #0b70e1);
+}
+
+/* Media quaries */
+
+@media (max-width:1200px){
+    .talk-background .item-left > h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:800px){
+    .talk-background .item-left,
+    .talk-background .item-right{
+        width: 100%;
+    }
 }
