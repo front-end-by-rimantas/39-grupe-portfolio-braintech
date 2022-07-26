@@ -13,13 +13,25 @@ class Progress{
                                     <p>${this.progressData[i]['value']}</p>
                                     </div>
                                     <div class="progress-bg">
-                                    <div class="progress-value" style="background-color:${this.progressData[i]['valueColor']}; width:${this.progressData[i]['value']};">
+                                    <div class="progress-value" style="background-color:${this.progressData[i]['valueColor']}; width:0;">
                                         
                                     </div>
                                     </div>
                                 </div>`
             DOMHtml.innerHTML += htmlBlock;
         }
+    }
+
+    fillProgressBars(){
+        const htmlValueBlock = document.querySelectorAll('.progress-value');
+        let i = 0;
+        for(const element of htmlValueBlock)
+        {
+            element.style.width = this.progressData[i]['value'];
+            element.style.transition = 'all 5s';     
+            i++;
+        }
+        console.log('Playing');
     }
 }
 
