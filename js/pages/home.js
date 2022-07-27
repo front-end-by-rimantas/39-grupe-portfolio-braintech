@@ -1,5 +1,6 @@
 console.log('home page...');
 
+import { Blog } from "../components/Blog.js";
 /* header start */
 /* header end */
 
@@ -11,6 +12,7 @@ console.log('home page...');
 
 /*progress start*/
     import { Progress } from "../components/progress-bar-render.js";
+import { blogsData } from "../data/blogsData.js";
     import { progressAboutData } from "../data/progressData.js";
     const prog = new Progress(progressAboutData);
     prog.renderProgressBars();
@@ -28,3 +30,7 @@ console.log('home page...');
 
 /* services start */
 /* services end */
+
+/* blogs start */
+    new Blog('#blog-slider', blogsData);
+/* blogs end */

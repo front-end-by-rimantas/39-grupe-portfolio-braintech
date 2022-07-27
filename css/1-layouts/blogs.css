@@ -1,0 +1,126 @@
+.blogs-background .blog-block{
+    text-align: center;
+    width: 100%;
+}
+
+.blogs-background .blog-block > span{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: #03228F;
+}
+
+.blogs-background .blog-block > h1{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 10px auto;
+}
+
+.blogs-background .blog-block > p{
+    margin-bottom: 40px;
+}
+
+/* Modifying blogs */
+
+#blog-slider{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#blog-slider .card-blog{
+    text-align: left;
+    padding: 10px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+#blog-slider .card-blog:hover{
+    transform: translateY(-10px);
+}
+
+#blog-slider .card-blog img{
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+}
+
+#blog-slider .card-blog .topic{
+    background-image: linear-gradient(#03228f, #4e95ed);
+    border-radius: 30px;
+    padding: 8px 20px;
+    color: white;
+    position: absolute;
+    right: 60px;
+    top: 255px;
+}
+
+#blog-slider .card-blog .card-info{
+    padding: 0 10px;
+}
+
+#blog-slider .card-blog .topic:hover{
+    background-image: linear-gradient(#4e95ed, #03228f);
+    cursor: pointer;
+}
+
+#blog-slider .card-blog .time-role{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+#blog-slider .time-role .time,
+#blog-slider .time-role .role{
+    width: 50%;
+    margin-left: 5px;
+}
+
+#blog-slider .icon{
+    color:#106eea;
+}
+
+#blog-slider .card-blog h1{
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 10px auto;
+    text-transform: capitalize;
+}
+
+#blog-slider .card-blog h1:hover{
+    color: #106eea;
+}
+
+#blog-slider .card-blog .description{
+    line-height: 28px;   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#blog-slider .card-blog a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    transition: color 0.3s;
+    color: black;
+    display: inline-block;
+    margin: 20px 10px 20px 0;
+}
+
+#blog-slider .card-blog a:hover{
+    color: #106eea;
+}
+
+#blog-slider .card-blog .arrow-right{
+    font-size: 10px;
+    transition: transform 0.3s;
+}
+
+#blog-slider .card-blog a:hover + .arrow-right{
+    color: #106eea;
+    transform: translateX(10px);
+}
+
+
