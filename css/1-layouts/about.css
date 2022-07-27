@@ -1,8 +1,33 @@
-.about-background {
-    background-color: cadetblue;
+/* MEDIA QUERY MANAGER */
+
+
+/* from 480px === min-width: 30em */
+/* from 580px === min-width: 36.25em */
+/* from 768px === min-width: 48em */
+/* from 1000px === min-width: 62.5em */
+/* from 1200px === min-width: 75em */
+/* from 1300px === min-width: 81.25em */
+
+.container {
+  width: 100%;
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+.container > .row {
+  width: 100%;
+  display: inline-block;
 }
 
+/* ///////////////////////////////////////// */
+
+
+
+.about-background {
+    background-color: #f8f9fa;;
+}
 .aboutUs {
+  /* position: relative; */
+  margin-top: 50px;
   font-size: 14px;
   font-weight: 400;
   color: rgb(3, 34, 143);
@@ -10,20 +35,48 @@
   transform: uppercase;
   letter-spacing: 1px;
 }
+.aboutUs {
+  position:relative;
+  padding-left:90px
+  
+}
+.aboutUs:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    background: rgb(221,76,35);
+    left: 0px;
+    top: 12px;
+    height: 4px;
+  } 
+  .usSecondLine::after{
+      content: '';
+      position: absolute;
+      width: 50px;
+      background: rgb(221,76,35);
+      left: 25px;
+      top: 12px;
+      height: 4px;
+    } 
+
+
+
+
 .mainText {
+  padding-top: 10px;
   font-size: 26px;
   font-weight: 700;
   color: rgb(16, 16, 16);
   line-height: 36.4px;
 }
 .textAbout {
+  padding-top: 20px;
   font-weight: 400;
   font-size: 18px;
   color: rgb(16, 16, 16);
-
 }
 .hapyyClients {
-  
+  margin-top: 25px;
   font-weight: 700;
   font-size: 45px;
   color: rgb(221,76,35)
@@ -50,6 +103,7 @@
   margin-top: 50px;
   background-color: rgb(255, 255, 255);
   padding-top: 50px;
+  
 }
 .hiQuality:hover {
   background-color: #fd7e14;
@@ -74,7 +128,6 @@
 "https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/1.png");
 background-size: contain;
 }
-
 
 /* Full stack box ////////////////////////// */
 .fullStack {
@@ -144,6 +197,7 @@ background-size: contain;
   margin-top: 22px;
   background-color: rgb(255, 255, 255);
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 .codeQuality:hover {
   background-color:#007bff;
@@ -154,20 +208,21 @@ background-size: contain;
   .codeQuality:hover .textInBox {
     color:rgb(255, 255, 255);
    }
+   .figure4 {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 0 30px;
+    background-image: url(
+  "https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/4.png");
+  background-size: contain;
+  }
 
-.agile:hover .figure4 {
+.codeQuality:hover .figure4 {
   background-image: url(
-"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/3.png");
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/4.png");
 }
 
-.figure4 {
-  width: 60px;
-  height: 60px;
-  margin: 0 0 0 30px;
-  background-image: url(
-"https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/3.png");
-background-size: contain;
-}
+
 /* codeQuality box ////////////////////////// */
 
 .textInBoxMain {
@@ -179,7 +234,6 @@ background-size: contain;
   padding-top: 50px;
 }
    
-
 .textInBox {
   font-weight: 400;
   font-size: 16px;
@@ -191,26 +245,7 @@ background-size: contain;
   letter-spacing: 0;
 }
 
-/* MEDIA QUERY MANAGER */
 
-/* from 480px === min-width: 30em */
-/* from 580px === min-width: 36.25em */
-/* from 768px === min-width: 48em */
-/* from 1000px === min-width: 62.5em */
-/* from 1200px === min-width: 75em */
-/* from 1300px === min-width: 81.25em */
-
-.container {
-    width: 100%;
-    display: inline-block;
-    padding: 0 1.5rem;
-  }
-  
-  .container > .row {
-    width: 100%;
-    display: inline-block;
-  }
-  
   /* from 580 px */
   @media screen and (min-width: 36.25em) {
     .container {
@@ -219,18 +254,14 @@ background-size: contain;
     .container > .row {
       width: 51rem;
       margin: 0 calc(50% - 25.5rem);
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1,3fr 0,5fr 0,5fr 1fr 1fr 1fr 1fr;
-      /* grid-template-columns: 1fr 1.3fr 0.7fr;
-      grid-template-rows: 0.5fr 1.5fr 1.7fr 1.5fr 0.4fr 0.4fr;
-      grid-auto-flow: row; */
+      /* grid-auto-flow: row;  */
       gap: 5px;
       grid-template-areas:
       "over25 over25"
       "hapyyClients projectDelivered"
-      
       "hiQuality hiQuality"
       "fullStack fullStack"
       "agile agile"
@@ -239,32 +270,28 @@ background-size: contain;
     }
     .over25 {
       grid-area: over25;
-      background-color: rgb(68, 101, 209);
+      /* background-color: rgb(68, 101, 209); */
   }
   .hapyyClients {
       grid-area: hapyyClients;
-      background-color: rgb(102, 57, 145);
+      /* background-color: rgb(102, 57, 145); */
   }
   .projectDelivered {
       grid-area: projectDelivered;
-      background-color: rgb(142, 143, 223);
+      /* background-color: rgb(142, 143, 223); */
   }
   .hiQuality {
       grid-area: hiQuality;
-      
   }
   .fullStack {
       grid-area: fullStack;
-      
-  }
+    }
   .agile {
       grid-area: agile;
-      
-  }
+    }
   .codeQuality {
       grid-area: codeQuality;
-      
-  }
+    }
   nav {
       display:none
   }
@@ -274,23 +301,79 @@ background-size: contain;
     .container > .row {
       width: 69rem;
       margin: 0 calc(50% - 34.5rem);
+
+      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1,5fr 0,5fr 4fr 4fr;
+        /* grid-auto-flow: row;  */
+        gap: 20px;
+        grid-template-areas:
+        "over25 over25"
+        "hapyyClients projectDelivered"
+        "hiQuality agile"
+        "fullStack codeQuality"
+        
     }
-  }
+    .hapyyClients {
+      margin-top: 0px;
+   
+    }
+    .agile {
+      margin-top: 22px;
+      margin-bottom: 0px;
+    }
+    .hiQuality {
+      margin-top: 22px;
+      margin-bottom: 0px;
+    }
+  
+    .fullStack {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+    .codeQuality {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+
+    }
+  
   
   /* from 1000px px */
   @media screen and (min-width: 62.5em) {
     .container > .row {
       width: 93rem;
       margin: 0 calc(50% - 46.5rem);
-    }
+
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr 2fr;
+      grid-template-rows: 4fr 1fr 2,5fr 2,5fr;
+      /* grid-auto-flow: row;  */
+      gap: 20px;
+      grid-template-areas:
+      "over25 over25 hiQuality agile"
+      "hapyyClients projectDelivered fullStack codeQuality"
+ 
   }
+
+    }
+  
   
   /* from 1200px px */
   @media screen and (min-width: 75em) {
     .container > .row {
       width: 111rem;
       margin: 0 calc(50% - 55.5rem);
+
+      
     }
+    .textInBoxMain {
+      font-weight: 700;
+      font-size: 26px;
+      
+    }
+
   }
   
   /* from 1300px */
