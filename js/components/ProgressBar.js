@@ -11,8 +11,9 @@ class ProgressBar{
 
     init(){
         if(!this.isSelectorValid()
-        || !this.isDataValid())
+        || !this.isDataValid()){
             return false;
+        }
         this.renderProgressBar();
     }
 
@@ -42,16 +43,14 @@ class ProgressBar{
         let finalhtmlBlock = '';
         for(const progressElement of this.progressData){
             const htmlBlock = `<div class="progress-block">
-                                    <div class="progress-info">
+                                <div class="progress-info">
                                     <p>${progressElement.tag}</p>
                                     <p>${progressElement.value}</p>
-                                    </div>
-                                    <div class="progress-bg">
-                                    <div class="progress-value" style="background-color:${progressElement.valueColor}; width:0;">
-                                        
-                                    </div>
-                                    </div>
-                                </div>`
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-value" style="background-color:${progressElement.valueColor}; width:0;"></div>
+                                </div>
+                               </div>`
             finalhtmlBlock += htmlBlock;
         }
         DOMhtml.innerHTML = finalhtmlBlock;
@@ -65,7 +64,7 @@ class ProgressBar{
             const progress = this.progressData[i++];
             element.style.width = progress.value;
             element.style.transition = 'width 3s';
-        }   
+        }
     }
 }
 

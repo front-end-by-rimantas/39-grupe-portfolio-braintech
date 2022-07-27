@@ -1,4 +1,4 @@
-import { ProgressBar } from "../components/Progress-bar.js";
+import { ProgressBar } from "../components/ProgressBar.js";
 import { progressAboutData } from "../data/progressData.js";
 
 console.log('home page...');
@@ -16,8 +16,9 @@ console.log('home page...');
     const prog = new ProgressBar(progressAboutData, '#progress-section-para', '.progress-value');
 
     let playOnce = true;
+    
     function PlayProgressFill(){
-        if(window.scrollY >= 1250 && playOnce)
+        if(window.scrollY >= 1000 && playOnce)
         {
             prog.fillProgressBar();
             playOnce = false;
