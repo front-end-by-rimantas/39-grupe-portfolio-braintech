@@ -12,20 +12,20 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://front-end-by-rimantas.github.io/39-grupe-portfolio/
 
-Design: http://www.innovationplans.com/idesign/daniels/particles.html
+Design: https://rstheme.com/products/html/braintech/index5.html#
 
 ## Project features
 
--   Github pages
--   single-page
--   content rendering with JS
--   carousel
--   gallery
--   progress bar
--   fontawesome icons
--   CSS animations
--   CSS import
--   JS import-export
+- Github pages
+- single-page
+- content rendering with JS
+- carousel
+- gallery
+- progress bar
+- fontawesome icons
+- CSS animations
+- CSS import
+- JS import-export
 
 ## Authors
 

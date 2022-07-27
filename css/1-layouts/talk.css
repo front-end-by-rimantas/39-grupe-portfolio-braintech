@@ -1,0 +1,121 @@
+/* Item left */
+
+.talk-background h2{
+    text-transform: uppercase;
+}
+
+.talk-background h1{
+    text-transform: capitalize;
+    line-height: 60px;
+}
+
+.talk-background .item-left h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 95px;
+    position: relative;
+    color: #03228F;
+}
+
+.talk-background .item-left > h1{
+    font-size: 35px;
+    line-height: 80px;
+}
+
+.talk-background .item-left h2::before{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    left: -70px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.talk-background .item-left h2::after{
+    content: '';
+    width: 15px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    left: -95px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.talk-background .item-left p{
+    margin-bottom: 20px;
+}
+
+.talk-background .item-left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.talk-background .icons .icon-self{
+    display: flex;
+ }
+
+.talk-background .icons .icon-info{
+   vertical-align: middle;
+   margin-left: 15px;
+}
+
+.talk-background img{   
+    width: 55px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* Item right */
+
+.talk-background .item-right{  
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    /*Background color is same as section color. 
+    The section bg color is white for that reason 
+    section color needs to be changed*/
+    /*Temp changed color to be visible agains section*/
+    background-color: white;
+    width: 30%;
+}
+
+.talk-background .talk-form-cl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.talk-background .talk-form-cl input[type="text"],
+                               input[type="email"],
+                               input[type="button"]{
+    padding: 20px 10px;
+    background-color: #f6f7f9;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.talk-background .talk-form-cl input[type="button"]{
+    color: white;
+    background-image: linear-gradient(#03228f, #0b70e1);
+}
+
+/* Media quaries */
+
+@media (max-width:1200px){
+    .talk-background .item-left > h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:800px){
+    .talk-background .item-left,
+    .talk-background .item-right{
+        width: 100%;
+    }
+}
