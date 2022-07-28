@@ -342,7 +342,7 @@ background-size: contain;
       margin: 0 calc(50% - 46.5rem);
 
       display: grid;
-      grid-template-columns: 2fr 2fr 2fr 2fr;
+      grid-template-columns: 1.2fr 1.2fr 2fr 2fr;
       grid-template-rows: 4fr 1fr 2,5fr 2,5fr;
       /* grid-auto-flow: row;  */
       gap: 20px;
@@ -351,6 +351,19 @@ background-size: contain;
       "hapyyClients projectDelivered fullStack codeQuality"
  
   }
+  .hiQuality {
+    /* grid-area:  center; */
+    position: relative;
+    top: 40px;
+  }
+  .fullStack {
+    /* grid-area:  center; */
+    position: relative;
+    top: 40px;
+  }
+  .mainText {
+    font-weight: 700;
+    font-size: 35px;
 
     }
   
@@ -363,11 +376,9 @@ background-size: contain;
 
       
     }
-    .textInBoxMain {
-      font-weight: 700;
-      font-size: 26px;
+    
       
-    }
+    
 
   }
   
