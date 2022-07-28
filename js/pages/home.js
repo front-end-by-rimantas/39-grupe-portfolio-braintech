@@ -1,6 +1,3 @@
-import { ProgressBar } from "../components/ProgressBar.js";
-import { progressAboutData } from "../data/progressData.js";
-
 console.log('home page...');
 
 /* header start */
@@ -13,6 +10,9 @@ console.log('home page...');
 /* about me end */
 
 /*progress start*/
+    import { ProgressBar } from "../components/ProgressBar.js";
+    import { progressAboutData } from "../data/progressData.js";
+    
     const prog = new ProgressBar(progressAboutData, '#progress-section-para', '.progress-value');
 
     let playOnce = true;
