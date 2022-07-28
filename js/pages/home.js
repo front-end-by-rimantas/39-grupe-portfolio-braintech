@@ -1,6 +1,5 @@
 console.log('home page...');
 
-import { Blog } from "../components/Blog.js";
 /* header start */
 /* header end */
 
@@ -12,7 +11,7 @@ import { Blog } from "../components/Blog.js";
 
 /*progress start*/
     import { Progress } from "../components/progress-bar-render.js";
-import { blogsData } from "../data/blogsData.js";
+
     import { progressAboutData } from "../data/progressData.js";
     const prog = new Progress(progressAboutData);
     prog.renderProgressBars();
@@ -32,5 +31,8 @@ import { blogsData } from "../data/blogsData.js";
 /* services end */
 
 /* blogs start */
+    import { Blog } from "../components/Blog.js";
+    import { blogsData } from "../data/blogsData.js";
+    
     new Blog('#blog-slider', blogsData);
 /* blogs end */
