@@ -1,5 +1,3 @@
-console.log('home page...');
-
 /* header start */
 /* header end */
 
