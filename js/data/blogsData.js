@@ -23,6 +23,14 @@ const blogsData = [
         descriptionTitle: 'Open source job report show more openings fewer',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non exercitationem nulla excepturi iusto laborum harum deserunt repudiandae totam quae. Doloremque quisquam sequi recusandae provident itaque commodi aliquid aspernatur sed molestias!'
     },
+    {
+        img: 'blog-3.jpg',
+        topic: 'It Services',
+        date: '22 December 2020',
+        role: 'admin',
+        descriptionTitle: 'Open source job report show more openings fewer',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non exercitationem nulla excepturi iusto laborum harum deserunt repudiandae totam quae. Doloremque quisquam sequi recusandae provident itaque commodi aliquid aspernatur sed molestias!'
+    },
 ]
 
 export { blogsData }

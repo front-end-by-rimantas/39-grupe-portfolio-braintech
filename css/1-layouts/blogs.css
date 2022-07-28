@@ -25,8 +25,20 @@
 
 #blog-slider{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
+    width: 1005px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 0 calc((100% - 1005px)/2);  
+}
+
+#blog-slider:hover{
+    cursor: grab;  
+}
+
+#blog-slider:active{
+    cursor: grabbing;  
 }
 
 #blog-slider .card-blog{

@@ -13,7 +13,7 @@ class Blog{
     renderBlog(){
         const structure = document.querySelector(this.selector);
         let HTML = '';
-        for(let i = 0;i<3;i++){
+        for(let i = 0;i<this.data.length;i++){
             const singleData = this.data[i];
             const blogBlock = `<div class="card-blog">
                                     <img src="./assets/images/${singleData.img}" alt="No">
