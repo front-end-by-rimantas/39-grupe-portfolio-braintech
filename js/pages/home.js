@@ -13,7 +13,7 @@ console.log('home page...');
     import { ProgressBar } from "../components/ProgressBar.js";
     import { progressAboutData } from "../data/progressData.js";
     
-    const prog = new ProgressBar(progressAboutData, '#progress-section-para', '.progress-value');
+    const prog = new ProgressBar(progressAboutData, '#progress-section-item-right', '.progress-value');
 
     let playOnce = true;
     

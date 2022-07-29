@@ -48,12 +48,19 @@ class ProgressBar{
                                     <p>${progressElement.value}</p>
                                 </div>
                                 <div class="progress-bg">
-                                    <div class="progress-value" style="background-color:${progressElement.valueColor}; width:0;"></div>
+                                    <div class="progress-value" style="background:repeating-linear-gradient(
+                                                                                                            45deg,
+                                                                                                            ${progressElement.firstValueColor},
+                                                                                                            ${progressElement.firstValueColor} 8px,
+                                                                                                            ${progressElement.secondValueColor} 8px,
+                                                                                                            ${progressElement.secondValueColor} 14px); 
+                                                                                                            width:0;">
+                                    </div>
                                 </div>
                                </div>`
             finalhtmlBlock += htmlBlock;
         }
-        DOMhtml.innerHTML = finalhtmlBlock;
+        DOMhtml.innerHTML += finalhtmlBlock + `<a href="#" target="_blank">Get started</a>`;
     }
 
     fillProgressBar(){
