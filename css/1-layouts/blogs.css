@@ -30,9 +30,12 @@
     width: 1005px;
     overflow: hidden;
     overflow-x: scroll;
-    margin: 0 calc((100% - 1005px)/2);  
+    margin: 0 calc((100% - 1005px)/2);
+    user-select: none;
+    background-image: linear-gradient(white, rgb(248, 247, 247));
 }
 
+/* Disabled since drag is not enabled
 #blog-slider:hover{
     cursor: grab;  
 }
@@ -40,12 +43,14 @@
 #blog-slider:active{
     cursor: grabbing;  
 }
+*/
 
 #blog-slider .card-blog{
     text-align: left;
     padding: 10px;
     transition: transform 0.3s;
     position: relative;
+    background-color: white;
 }
 
 #blog-slider .card-blog:hover{
@@ -56,6 +61,7 @@
     text-align: center;
     width: 300px;
     cursor: pointer;
+    -webkit-user-drag: none;
 }
 
 #blog-slider .card-blog .topic{

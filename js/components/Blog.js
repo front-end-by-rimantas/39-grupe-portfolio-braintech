@@ -8,6 +8,9 @@ class Blog{
 
     init(){
         this.renderBlog();
+
+        //Disabled since to buggy
+        //this.detectDragSlide();
     }
 
     renderBlog(){
@@ -37,6 +40,38 @@ class Blog{
         }
         structure.innerHTML = HTML;
     }
+
+    //Replaces scroll with drag method
+    /*
+    detectDragSlide(){
+        const sliderBlock = document.querySelector('#blog-slider');
+        let pos = { top: 0, left: 0, x: 0, y: 0 };
+        //console.log(cardBlock[0].clientWidth * cardBlock.length + (20 * cardBlock.length));
+        
+        let isMouseDown = false;
+        
+        sliderBlock.addEventListener('mousedown', (e) =>{
+            pos = {
+                left: sliderBlock.scrollLeft,
+                top: sliderBlock.scrollTop,
+                // Get the current mouse position
+                x: e.clientX,
+                y: e.clientY,
+            };
+            isMouseDown = true;
+        })
+        sliderBlock.addEventListener('mouseup', () =>{
+            isMouseDown = false;
+        })
+
+        sliderBlock.addEventListener('mousemove', (e) =>{
+            if(isMouseDown){
+                const dx = e.clientX - pos.x;
+                sliderBlock.scrollLeft = pos.left - dx;         
+            }
+        })
+    }
+    */
 }
 
 export { Blog }
