@@ -1,8 +1,28 @@
-.about-background {
-    background-color: cadetblue;
+/* MEDIA QUERY MANAGER */
+
+
+/* from 480px === min-width: 30em */
+/* from 580px === min-width: 36.25em */
+/* from 768px === min-width: 48em */
+/* from 1000px === min-width: 62.5em */
+/* from 1200px === min-width: 75em */
+/* from 1300px === min-width: 81.25em */
+.container {
+  width: 100%;
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+.container > .row {
+  width: 100%;
+  display: inline-block;
 }
 
+.about-background {
+    background-color: #f8f9fa;;
+}
 .aboutUs {
+  /* position: relative; */
+  margin-top: 50px;
   font-size: 14px;
   font-weight: 400;
   color: rgb(3, 34, 143);
@@ -10,19 +30,48 @@
   transform: uppercase;
   letter-spacing: 1px;
 }
+.aboutUs {
+  position:relative;
+  padding-left:90px
+  
+}
+.aboutUs:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    background: rgb(221,76,35);
+    left: 0px;
+    top: 12px;
+    height: 4px;
+  } 
+  .usSecondLine::after{
+      content: '';
+      position: absolute;
+      width: 50px;
+      background: rgb(221,76,35);
+      left: 25px;
+      top: 12px;
+      height: 4px;
+    } 
+
+
+
+
 .mainText {
+  padding-top: 10px;
   font-size: 26px;
   font-weight: 700;
   color: rgb(16, 16, 16);
   line-height: 36.4px;
 }
 .textAbout {
+  padding-top: 20px;
   font-weight: 400;
   font-size: 18px;
   color: rgb(16, 16, 16);
-
 }
 .hapyyClients {
+  margin-top: 25px;
   font-weight: 700;
   font-size: 45px;
   color: rgb(221,76,35)
@@ -44,26 +93,154 @@
   color: rgb(16, 16, 16);
   line-height: 21,6;
 }
-/* MEDIA QUERY MANAGER */
-
-/* from 480px === min-width: 30em */
-/* from 580px === min-width: 36.25em */
-/* from 768px === min-width: 48em */
-/* from 1000px === min-width: 62.5em */
-/* from 1200px === min-width: 75em */
-/* from 1300px === min-width: 81.25em */
-
-.container {
-    width: 100%;
-    display: inline-block;
-    padding: 0 1.5rem;
-  }
+.hiQuality {
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
   
-  .container > .row {
-    width: 100%;
-    display: inline-block;
+}
+.hiQuality:hover {
+  background-color: #fd7e14;
   }
-  
+  .hiQuality:hover .textInBoxMain {
+   color:rgb(255, 255, 255);
+  }
+  .hiQuality:hover .textInBox {
+    color:rgb(255, 255, 255);
+   }
+
+.hiQuality:hover .figure {
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/1.png");
+}
+
+.figure {
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 30px;
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/1.png");
+background-size: contain;
+}
+
+/* Full stack box ////////////////////////// */
+.fullStack {
+  border-radius: 10px;
+  margin-top: 22px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+}
+.fullStack:hover {
+  background-color: cyan;
+  }
+  .fullStack:hover .textInBoxMain {
+   color:rgb(255, 255, 255);
+  }
+  .fullStack:hover .textInBox {
+    color:rgb(255, 255, 255);
+   }
+
+.fullStack:hover .figure2 {
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/2.png");
+}
+
+.figure2 {
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 30px;
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/2.png");
+background-size: contain;
+}
+/* Full stack box ////////////////////////// */
+/* agile stack box ////////////////////////// */
+.agile {
+  border-radius: 10px;
+  margin-top: 22px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+}
+.agile:hover {
+  background-color:#ffc107;
+  }
+  .agile:hover .textInBoxMain {
+   color:rgb(255, 255, 255);
+  }
+  .agile:hover .textInBox {
+    color:rgb(255, 255, 255);
+   }
+
+.agile:hover .figure3 {
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/3.png");
+}
+
+.figure3 {
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 30px;
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/3.png");
+background-size: contain;
+}
+/* agile box ////////////////////////// */
+/* codeQuality stack box ////////////////////////// */
+.codeQuality {
+  border-radius: 10px;
+  margin-top: 22px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.codeQuality:hover {
+  background-color:#007bff;
+  }
+  .codeQuality:hover .textInBoxMain {
+   color:rgb(255, 255, 255);
+  }
+  .codeQuality:hover .textInBox {
+    color:rgb(255, 255, 255);
+   }
+   .figure4 {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 0 30px;
+    background-image: url(
+  "https://rstheme.com/products/html/braintech/assets/images/services/style3/main-img/4.png");
+  background-size: contain;
+  }
+
+.codeQuality:hover .figure4 {
+  background-image: url(
+"https://rstheme.com/products/html/braintech/assets/images/services/style3/hover-img/4.png");
+}
+
+
+/* codeQuality box ////////////////////////// */
+
+.textInBoxMain {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(16, 16, 16);
+  line-height: 28,8;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+   
+.textInBox {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(16, 16, 16);
+  line-height: 28,8;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  letter-spacing: 0;
+}
+
+
   /* from 580 px */
   @media screen and (min-width: 36.25em) {
     .container {
@@ -72,18 +249,14 @@
     .container > .row {
       width: 51rem;
       margin: 0 calc(50% - 25.5rem);
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1,3fr 0,5fr 0,5fr 1fr 1fr 1fr 1fr;
-      /* grid-template-columns: 1fr 1.3fr 0.7fr;
-      grid-template-rows: 0.5fr 1.5fr 1.7fr 1.5fr 0.4fr 0.4fr;
-      grid-auto-flow: row; */
+      /* grid-auto-flow: row;  */
       gap: 5px;
       grid-template-areas:
       "over25 over25"
       "hapyyClients projectDelivered"
-      
       "hiQuality hiQuality"
       "fullStack fullStack"
       "agile agile"
@@ -92,32 +265,28 @@
     }
     .over25 {
       grid-area: over25;
-      background-color: rgb(68, 101, 209);
+      /* background-color: rgb(68, 101, 209); */
   }
   .hapyyClients {
       grid-area: hapyyClients;
-      background-color: rgb(102, 57, 145);
+      /* background-color: rgb(102, 57, 145); */
   }
   .projectDelivered {
       grid-area: projectDelivered;
-      background-color: rgb(142, 143, 223);
+      /* background-color: rgb(142, 143, 223); */
   }
   .hiQuality {
       grid-area: hiQuality;
-      background-color: rgb(5, 20, 158);
   }
   .fullStack {
       grid-area: fullStack;
-      background-color: rgb(69, 75, 158);
-  }
+    }
   .agile {
       grid-area: agile;
-      background-color: rgb(82, 29, 180);
-  }
+    }
   .codeQuality {
       grid-area: codeQuality;
-      background-color: blue;
-  }
+    }
   nav {
       display:none
   }
@@ -127,23 +296,91 @@
     .container > .row {
       width: 69rem;
       margin: 0 calc(50% - 34.5rem);
+
+      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1,5fr 0,5fr 4fr 4fr;
+        /* grid-auto-flow: row;  */
+        gap: 20px;
+        grid-template-areas:
+        "over25 over25"
+        "hapyyClients projectDelivered"
+        "hiQuality agile"
+        "fullStack codeQuality"
+        
     }
-  }
+    .hapyyClients {
+      margin-top: 0px;
+   
+    }
+    .agile {
+      margin-top: 22px;
+      margin-bottom: 0px;
+    }
+    .hiQuality {
+      margin-top: 22px;
+      margin-bottom: 0px;
+    }
+  
+    .fullStack {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+    .codeQuality {
+      margin-top: 0px;
+      margin-bottom: 50px;
+    }
+
+    }
+  
   
   /* from 1000px px */
   @media screen and (min-width: 62.5em) {
     .container > .row {
       width: 93rem;
       margin: 0 calc(50% - 46.5rem);
-    }
+
+      display: grid;
+      grid-template-columns: 1.2fr 1.2fr 2fr 2fr;
+      grid-template-rows: 4fr 1fr 2,5fr 2,5fr;
+      /* grid-auto-flow: row;  */
+      gap: 20px;
+      grid-template-areas:
+      "over25 over25 hiQuality agile"
+      "hapyyClients projectDelivered fullStack codeQuality"
+ 
   }
+}
+  .hiQuality {
+    /* grid-area:  center; */
+    position: relative;
+    top: 40px;
+  }
+  .fullStack {
+    /* grid-area:  center; */
+    position: relative;
+    top: 40px;
+  }
+  .mainText {
+    font-weight: 700;
+    font-size: 35px;
+
+    }
+  
   
   /* from 1200px px */
   @media screen and (min-width: 75em) {
     .container > .row {
       width: 111rem;
       margin: 0 calc(50% - 55.5rem);
+
+      
     }
+    
+      
+    
+
   }
   
   /* from 1300px */
