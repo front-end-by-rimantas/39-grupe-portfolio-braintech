@@ -151,16 +151,31 @@
 /* media quaries */
 
 @media (max-width: 1000px){
+    .blogs-background{
+        padding: 80px 20px;
+    }
     #blog-slider{
-        width: 655px;
-        margin: 0 calc((100% - 655px)/2);
+        width: 750px;
+        margin: 0 calc((100% - 750px)/2);
+    }
+    #blog-slider .card-blog img{       
+        width: 350px;
+    }
+    #blog-slider .card-blog .topic{
+        top: 300px;
     }
 }
 
 @media (max-width: 800px){
     #blog-slider{
-        width: 307px;
-        margin: 0 calc((100% - 307px)/2);
+        width: 427px;
+        margin: 0 calc((100% - 427px)/2);
+    }
+    #blog-slider .card-blog img{       
+        width: 420px;
+    }
+    #blog-slider .card-blog .topic{
+        top: 370px;
     }
 }
 
