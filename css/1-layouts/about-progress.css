@@ -1,0 +1,105 @@
+/* item-left */
+
+.about-progress-background .item-left{
+    width: 55%;
+}
+
+.about-progress-background .item-left img{
+    width: 100%;
+    height: 530px;
+    object-fit: contain;
+}
+
+/* item-right */
+
+.about-progress-background .item-right{
+    width: 45%;
+}
+
+.about-progress-background .item-right h1{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.about-progress-background .item-right h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 95px;
+    position: relative;
+    color: #03228F;
+}
+
+.about-progress-background .item-right h2::before{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    right: 420px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.about-progress-background .item-right h2::after{
+    content: '';
+    width: 15px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    right: 480px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.about-progress-background .item-right .progress-block{
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.about-progress-background .item-right .progress-block:last-of-type{
+    margin-bottom: 0px;
+}
+
+.about-progress-background .item-right .progress-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-progress-background .progress-info p:last-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-progress-background .item-right .progress-bg{
+    width: 100%;
+    height: 8px;
+    background-color: #eeeeee;
+}
+
+.about-progress-background .item-right .progress-value{
+    width: 50%;
+    height: inherit;
+    background-color: orange;
+}
+
+.about-progress-background .item-right a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(#f27c1e, #dd4c23);
+    padding: 15px 40px;
+    border-radius: 99px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+/* media quaries */
+
+@media (max-width:800px){
+    .about-progress-background .item-left,
+    .about-progress-background .item-right
+    {
+        width: 100%;
+    }
+}
