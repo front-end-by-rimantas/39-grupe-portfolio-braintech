@@ -40,7 +40,7 @@ const blogsData = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non exercitationem nulla excepturi iusto laborum harum deserunt repudiandae totam quae. Doloremque quisquam sequi recusandae provident itaque commodi aliquid aspernatur sed molestias!'
     },
     {
-        img: 'blog-5.jpg',
+        img: 'blog-6.jpg',
         topic: 'It Services',
         date: '30 December 2020',
         role: 'admin',
