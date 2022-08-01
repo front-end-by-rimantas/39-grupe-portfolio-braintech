@@ -242,8 +242,14 @@
     <!-- LETS TALK --START==================== -->
     <section class="container talk-background">
       <div class="row">
+        <div class="tear-line tear-line-1"></div>
+        <div class="tear-line tear-line-2"></div>
+        <div class="tear-line tear-line-3"></div>
+        <div class="tear tear-1"></div>
+        <div class="tear tear-2"></div>
+        <div class="tear tear-3"></div>
         <div class="item-left">
-          <h2>Let's talk</h2>
+          <span>Let's talk</span>
           <h1>Speak with expert engineers.</h1>
           <p>
               From its medieval origins to the digital era, learn everything there <br>
@@ -253,21 +259,21 @@
             <div class="icon-self">
               <img src="./assets/icons/email.png" alt="Email icon">
               <div class="icon-info">
-                <h1>Email</h1>
+                <a href="mailto:support@rstheme.com">Email</a>
                 <p>support@rstheme.com</p>
               </div>
             </div>
             <div class="icon-self">
               <img src="./assets/icons/phone.png" alt="Phone icon">
               <div class="icon-info">
-                <h1>Call us</h1>
+                <a href="#">Call us</a>
                 <p>(+01) 555 - 9811 - 444</p>
               </div>
             </div>
             <div class="icon-self">
               <img src="./assets/icons/map.png" alt="Map icon">
               <div class="icon-info">
-                <h1>Office Address</h1>
+                <a href="#">Office Address</a>
                 <p>
                     374 FA Tower, William S Blvd <br>
                     2721, IL, USA
@@ -280,11 +286,11 @@
           <h1>Schedule apointment</h1>
           <p>We here to help you 24/7 with experts</p>
           <form id="talk-form" class="talk-form-cl">
-            <input type="text" name="name-input" id="name-input" placeholder="Name">
-            <input type="email" name="email-input" id="email-input" placeholder="E-Mail">
-            <input type="text" name="phone-input" id="phone-input" placeholder="Phone Number">
-            <input type="text" name="web-input" id="web-input" placeholder="Your website">
-            <input type="button" value="Submit Now">
+            <input type="text" name="name-input" id="name-input" class="talk-input" placeholder="Name" required>
+            <input type="email" name="email-input" id="email-input" class="talk-input" placeholder="E-Mail" required>
+            <input type="text" name="phone-input" id="phone-input" class="talk-input" placeholder="Phone Number" required>
+            <input type="text" name="web-input" id="web-input" class="talk-input" placeholder="Your website">
+            <input type="submit" form="talk-form" id="btn-input" class="talk-input" value="Submit Now">
           </form>
         </div>
       </div>
