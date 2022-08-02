@@ -1,16 +1,51 @@
 .btn,
 .btn:link,
 .btn:visited {
+  display: inline-block;
   font-weight: 600;
   font-size: 1.6rem;
-  padding: 1.5rem 4rem;
+  padding: 1.4rem 4rem;
   cursor: pointer;
   border: none;
   border-radius: 99px;
   text-decoration: none;
   color: var(--white-color);
   background: var(--btn-gradient);
+  box-shadow: var(--main-shadow);
 }
 .btn:hover {
   background: var(--btn-gradient-hover);
+}
+
+/* ============================= */
+/* MOVE TO TOP BUTTON  */
+.btn-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 4rem;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  opacity: 0.9;
+  border: none;
+  cursor: pointer;
+  color: var(--white-color);
+  background: var(--bg-gradient);
+  visibility: hidden;
+  transition: all 0.4s;
+
+  display: grid;
+  place-items: center;
+}
+.btn-to-top:hover {
+  opacity: 0.8;
+}
+.btn-to-top > i {
+  font-size: 2rem;
+}
+
+.btn-to-top-show {
+  height: 4.5rem;
+  width: 4.5rem;
+  visibility: visible;
 }
