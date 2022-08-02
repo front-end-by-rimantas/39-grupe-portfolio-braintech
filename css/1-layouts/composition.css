@@ -1,0 +1,45 @@
+.composition-top-background {
+  position: relative;
+  background-color: var(--white-color);
+  box-shadow: var(--section-shadow);
+}
+
+.composition {
+  width: 100%;
+  overflow: hidden;
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
+
+.composition__slider {
+  height: 8rem;
+  display: flex;
+  transition: 0 ease-in;
+}
+
+.composition__slider > img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* ============================= */
+/* Tiny-slider package styles */
+.tns-liveregion {
+  display: none;
+}
+#tns1-ow,
+#tns2-ow,
+#tns4-ow {
+  width: 100% !important;
+}
+#tns1-iw,
+#tns2-iw {
+  margin: 0 !important;
+}
+
+#tns4-mw {
+  width: 100% !important;
+}
