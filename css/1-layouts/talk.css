@@ -1,0 +1,243 @@
+/* Section background */
+.talk-background{
+    background-color: #f6f7f9;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* tear drops */
+.tear-line{
+    background-color: white;
+    width: 1px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+}
+
+.tear-line-1{
+    left: 20px;
+}
+
+.tear-line-2{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tear-line-3{
+    right: 20px;
+}
+
+.tear{
+    background-image: linear-gradient(white, #0b70e1);
+    width: 3px;
+    height: 50px;
+    position: absolute;
+}
+
+.tear-1, .tear-3{
+    animation-name: drop_tear_LR;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+}
+
+.tear-2{
+    animation-name: drop_tear_middle;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-duration: 15s;
+}
+
+.tear-1{
+    left: 20px;
+    top: -300px;
+}
+
+.tear-2{
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+.tear-3{
+    right: 20px;
+    top: -300px;
+}
+
+@keyframes drop_tear_LR {
+    0%{
+        top: -300px
+    }
+    100%{
+        top: 300vh
+    }
+}
+
+@keyframes drop_tear_middle {
+    0%{
+        top: -50px
+    }
+    100%{
+        top: 300vh
+    }
+}
+
+
+/* Item left */
+
+.talk-background span{
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.talk-background h1{
+    text-transform: capitalize;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.talk-background .item-left span{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 95px;
+    position: relative;
+    color: #03228F;
+}
+
+.talk-background .item-left > h1{
+    font-size: 35px;
+    line-height: 80px;
+}
+
+.talk-background .item-left span::before{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    left: -70px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.talk-background .item-left span::after{
+    content: '';
+    width: 15px;
+    height: 4px;
+    background-color: #fd6509;
+    position: absolute;
+    left: -95px;
+    top:5px;
+    transform: translateY(100%);
+}
+
+.talk-background .item-left > p{
+    margin-bottom: 30px;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.talk-background .item-left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.talk-background .icons .icon-self{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.talk-background .icons .icon-self:last-of-type{
+    margin-bottom: 0;
+}
+
+.talk-background .icons .icon-info{
+   vertical-align: middle;
+   margin-left: 15px;
+}
+
+.talk-background .icons .icon-info a{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    
+    transition: color 0.3s;
+}
+
+.talk-background .icons .icon-info a:hover{
+    color: #106eea;
+    cursor: pointer;
+}
+
+.talk-background img{   
+    width: 55px;
+    vertical-align: middle;
+    object-fit: contain;
+    z-index: 1;
+}
+
+/* Item right */
+
+.talk-background .item-right{  
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    /*Background color is same as section color. 
+    The section bg color is white for that reason 
+    section color needs to be changed*/
+    /*Temp changed color to be visible agains section*/
+    background-color: white;
+    width: 30%;
+    z-index: 1;
+}
+
+.talk-background .talk-form-cl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.talk-background .talk-form-cl .talk-input{
+    padding: 20px 10px;
+    background-color: #f6f7f9;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.talk-background .talk-form-cl #btn-input{
+    color: white;
+    background-image: linear-gradient(135deg, #03228f, #0b70e1);
+    cursor: pointer;
+}
+
+/* Media quaries */
+
+@media (max-width:1200px){
+    .talk-background .item-left > h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1000px){
+    .talk-background{
+        padding: 80px 10px;
+    }
+
+    .talk-background .row{
+        flex-direction: column;
+    }
+
+    .talk-background .item-left{
+        margin-bottom: 20px;
+    }
+
+    .talk-background .item-left,
+    .talk-background .item-right{
+        width: 100%;
+    }
+}
